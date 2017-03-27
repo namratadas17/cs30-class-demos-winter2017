@@ -27,4 +27,12 @@ void reactToMouse() {
       sami.exercise();
     }
   }
+  if (keyPressed) {
+    if (key == 'e') {
+      namrata.eat();
+    }
+    else if (key == 'x') {
+      namrata.exercise();
+    }
+  }
 }
