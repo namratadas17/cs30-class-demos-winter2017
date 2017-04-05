@@ -5,7 +5,6 @@ class Ball {
   int xSpeed, ySpeed;
   int radius;
   color fillColor;
-  int lastPaddleCollisionTime;
 
   //constructor(s)
   Ball() {
@@ -15,10 +14,9 @@ class Ball {
     //randomize the direction the ball goes toward at the start
     float randomSeed = random(100);
     if (randomSeed < 50) {
-      randomSeed *= -1;
+      xSpeed *= -1;
     }
     resetLocation();
-    lastPaddleCollisionTime = 0;
   }
 
   void resetLocation() {
