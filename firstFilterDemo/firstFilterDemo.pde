@@ -18,7 +18,7 @@ void draw() {
     
     //insert your filter here!
     float changeAmount = map(mouseX, 0, width, 0, 255);
-    color newColor = color(r, g+changeAmount, b);
+    color newColor = color(255-r, 255-g, 255-b);
     
     pixels[i] = newColor;
   }
